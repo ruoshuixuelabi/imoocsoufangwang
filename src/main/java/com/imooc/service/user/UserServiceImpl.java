@@ -34,8 +34,8 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     private RoleRepository roleRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
+//    @Autowired
+//    private ModelMapper modelMapper;
 
 //    private final Md5PasswordEncoder passwordEncoder = new Md5PasswordEncoder();
 
@@ -64,7 +64,8 @@ public class UserServiceImpl implements IUserService {
         if (!byId.isPresent()) {
             return ServiceResult.notFound();
         }
-        UserDTO userDTO = modelMapper.map(byId.get(), UserDTO.class);
+//        UserDTO userDTO = modelMapper.map(byId.get(), UserDTO.class);
+        UserDTO userDTO = null;
         return ServiceResult.of(userDTO);
     }
 

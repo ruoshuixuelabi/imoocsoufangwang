@@ -25,7 +25,7 @@ import com.imooc.web.dto.HouseSubscribeDTO;
 /**
  * Created by 瓦力.
  */
-@Controller
+//@Controller
 public class UserController {
     @Autowired
     private IUserService userService;

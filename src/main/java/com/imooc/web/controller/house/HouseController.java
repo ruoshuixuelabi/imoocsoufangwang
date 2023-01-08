@@ -38,7 +38,7 @@ import com.imooc.web.form.RentSearch;
 /**
  * Created by 瓦力.
  */
-@Controller
+//@Controller
 public class HouseController {
 
     @Autowired
